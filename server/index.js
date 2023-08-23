@@ -1,6 +1,6 @@
 import http from 'http'
 import { handler as httpHandler } from '../build/handler.js'
-import { handler as wsHandler } from './wsHandler.js'
+import { handler as wsHandler } from '../src/lib/wsHandler.server.js'
 import { env } from '../build/env.js'
 import polka from 'polka'
 

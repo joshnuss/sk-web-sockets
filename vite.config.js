@@ -6,7 +6,7 @@ const wsServer = {
   async configureServer(server) {
     if (!server.httpServer) return
 
-    const { handler } = await import('./server/wsHandler')
+    const { handler } = await import('./src/lib/wsHandler.server.js')
 
     handler(server.httpServer)
   }
